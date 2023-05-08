@@ -25,8 +25,7 @@ export default function Onboarding() {
             >
                 <Text style={styles.slider}>Looking for the Best broker for your New Home</Text>
                 <Text style={styles.slider}>Looking for the Best broker for your New Home</Text>
-                <Text style={styles.slider}>Looking for the Best broker for your New Home</Text>
-                <Text style={styles.slider}>Looking for the Best broker for your New Home</Text>
+                
             </Swiper>
 
             <Image source={localImages.ARROW} style={styles.arrowImg} resizeMode='contain' />
