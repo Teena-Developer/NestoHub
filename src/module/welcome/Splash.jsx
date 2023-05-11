@@ -3,12 +3,12 @@ import React from 'react'
 import { localImages } from '../../util/localImages';
 import colors from '../../util/colors';
 
-function Splash({navigation}) {
-
+function Splash({ navigation }) {
+    
     setTimeout(() => {
         console.log('hiii')
-        navigation.navigate('Onboarding')
-    }, 5000)
+        navigation.navigate('AfterSplash')
+    }, 2000)
     return (
         <View style={styles.container}>
             <Image source={localImages.LOGO} />
