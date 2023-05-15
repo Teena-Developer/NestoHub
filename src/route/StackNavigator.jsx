@@ -7,16 +7,18 @@ import SignUp from '../module/authentication/SignUp';
 import AfterSplash from '../module/authentication/AfterSplash';
 import Home from '../module/home/Home';
 import Onboarding from '../module/welcome/Onboarding';
+import Location from '../module/home/Location';
 
 const Stack = createStackNavigator();
 
 export default function StackNavigator() {
     return (
         <Stack.Navigator
-            initialRouteName={'Splash'}
+            initialRouteName="Home"
             screenOptions={{
                 headerShown: false
             }}>
+            <Stack.Screen name="Location" component={Location} />
             <Stack.Screen name="SignUp" component={SignUp} />
             <Stack.Screen name="OtpVerification" component={OtpVerification} />
             <Stack.Screen name="Login" component={Login} />

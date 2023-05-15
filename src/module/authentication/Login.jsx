@@ -4,18 +4,18 @@ import { SafeAreaView } from 'react-native-safe-area-context'
 import { localImages } from '../../util/localImages'
 import { vh, vw } from '../../util/dimensions'
 import colors from '../../util/colors'
+import { PhoneNumber } from '../../util/regex'
 
 export default function Login({ navigation }) {
     const [Phone, setPhone] = useState('')
     console.log('input', Phone)
 
     const Submit = () => {
-        const phoneNo = /^[0]?[6789]\d{9}$/;
         if (Phone == '') {
             Alert.alert(Login,
                 'Please Enter Your Phone Number',
                 [{ text: "Cancel" }, { text: "OK" }])
-        } else if (phoneNo.test(Phone) == false) {
+        } else if (PhoneNumber?.test(Phone) == false) {
             Alert.alert("Login",
                 'Phone number is invalid',
                 [{ text: "Cancel" }, { text: "OK" }])

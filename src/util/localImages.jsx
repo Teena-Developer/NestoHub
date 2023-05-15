@@ -8,7 +8,7 @@ export const localImages = {
     OVERLAY:require(`${logourl}Overlay.png`),
     BROKER:require(`${logourl}broker.png`),
     BUILDER:require(`${logourl}builder.png`),
-    BOTTOMLINE:require(`${logourl}bottomline.png`),
     LEFTARROW:require(`${logourl}leftarrow.png`),
     CHECKBOX:require(`${logourl}checkbox.png`),
+    DROPDOWN:require(`${logourl}dropdown.png`),
 }

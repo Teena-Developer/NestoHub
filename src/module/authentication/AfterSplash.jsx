@@ -14,14 +14,14 @@ export default function AfterSplash({ navigation }) {
     //     (error)=>{console.log(error)})
     //   ),[])
 
-    useEffect(() => (
-        postAPI(
-            endpoint?.GET_PHOTOS,
-            { name: "teena" },
-            (response) => { console.log(response) },
-            (error) => { console.log(error) }
-        )
-    ), [])
+    // useEffect(() => (
+    //     postAPI(
+    //         endpoint?.GET_PHOTOS,
+    //         { name: "teena" },
+    //         (response) => { console.log(response) },
+    //         (error) => { console.log(error) }
+    //     )
+    // ), [])
 
     return (
         <SafeAreaView style={styles.container}>
